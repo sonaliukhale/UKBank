@@ -1,0 +1,11 @@
+package com.app.easybank.EasyBankApplication.Repository;
+
+import com.app.easybank.EasyBankApplication.entity.CardEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CardRepo extends JpaRepository<CardEntity, Long>, CrudRepository<CardEntity, Long> {
+
+}
